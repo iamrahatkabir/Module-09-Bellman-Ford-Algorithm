@@ -21,7 +21,7 @@ bool cycle = false;
 
 void ballman_ford()
 {
-    for(int i = 0; i < n-1; i++) //Ballman Ford algo always runs < n-1 times; 
+    for(int i = 0; i < n-1; i++) //Ballman Ford algo always runs < n-1 times as we are setting the distance[0] = 0 by ourself; 
     {
         for(auto ed : edge_list)
         {
